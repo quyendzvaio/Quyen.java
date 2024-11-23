@@ -1,7 +1,7 @@
 public class Book {  
     private int maSach;  
     private String tenSach;  
-    private String tenTacGia;  
+    private Tacgia tenTacGia;  
     private int namSanXuat;  
     private String tomTatNoiDung;  
     private double giaTien;  
@@ -9,7 +9,7 @@ public class Book {
     public Book() {  
     }  
 
-    public Book(int maSach, String tenSach, String tenTacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {  
+    public Book(int maSach, String tenSach, Tacgia tenTacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {  
         this.maSach = maSach;  
         this.tenSach = tenSach;  
         this.tenTacGia = tenTacGia;  
@@ -34,11 +34,11 @@ public class Book {
         this.tenSach = tenSach;  
     }  
 
-    public String getTenTacGia() {  
+    public Tacgia getTenTacGia() {  
         return tenTacGia;  
     }  
 
-    public void setTenTacGia(String tenTacGia) {  
+    public void setTenTacGia(Tacgia tenTacGia) {  
         this.tenTacGia = tenTacGia;  
     }  
 
@@ -71,7 +71,7 @@ public class Book {
         return "Book{" +  
                 "maSach=" + maSach +  
                 ", tenSach='" + tenSach + '\'' +  
-                ", tenTacGia='" + tenTacGia + '\'' +  
+                ", tenTacGia=" + (tenTacGia != null ? tenTacGia.toString() : "N/A") +  
                 ", namSanXuat=" + namSanXuat +  
                 ", tomTatNoiDung='" + tomTatNoiDung + '\'' +  
                 ", giaTien=" + giaTien +  
@@ -79,11 +79,12 @@ public class Book {
     }  
 
     public void display() {  
-        System.out.println(this.toString());  
+        System.out.println(this);  
     }  
 
     public static void main(String[] args) {  
-        Book book = new Book(1, "Java Programming", "John Doe", 2022, "An introduction to Java programming.", 29.99);  
-        book.display();  
+        Tacgia tacGia = new Tacgia("Tao la Q");
+        Book sach = new Book(1, "Java Programming", tacGia, 2022, "Introduction to Java programming.", 100.0);  
+        sach.display();  
     }  
-}
+}  

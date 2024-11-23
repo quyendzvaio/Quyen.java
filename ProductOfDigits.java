@@ -15,3 +15,28 @@ public class ProductOfDigits {
     return product;  
     }  
    }  
+//    str.length()
+
+//    char ch = str.charAt(0); // 'H'
+
+//    String str1 = "Java";  
+//     String str2 = "java";  
+//     boolean isEqual = str1.equals(str2); // false  
+//     boolean isEqualIgnoreCase = str1.equalsIgnoreCase(str2); // true
+
+//     int index = str.indexOf("World"); // 7  
+//     int lastIndex = str.lastIndexOf("o"); // 8
+
+//     String subString = str.substring(7, 12); // "World"
+
+//     String replaced = str.replace("World", "Java"); // "Hello, Java!"
+
+//     String upper = str.toUpperCase(); // "HELLO, WORLD!"  
+//     String lower = str.toLowerCase(); // "hello, world!"
+
+//     String trimmed = "   Hello, World!   ".trim(); // "Hello, World!"
+
+//     String[] parts = str.split(", "); // ["Hello", "World!"]
+
+//     boolean contains = str.contains("Hello"); // chuoi co chua chuoi "Hello" khong
+
